@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Learning - Sinflashtirish</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>📊 Mashinali O‘qitishda Sinflashtirish</h1>
+    <p>Naive Bayes va KNN algoritmlari</p>
+</header>
+
+<nav>
+    <a href="#about">Sinflashtirish</a>
+    <a href="#naive">Naive Bayes</a>
+    <a href="#knn">KNN</a>
+    <a href="#compare">Taqqoslash</a>
+    <a href="#usage">Qo‘llanilish</a>
+    <a href="#learn">O‘rganish</a>
+    <a href="#quiz">Test</a>
+    <a href="#game">O‘yin</a>
+    <a href="#stats">Statistika</a>
+</nav>
+
+<section id="about">
+    <h2>📌 Sinflashtirish nima?</h2>
+    <p>
+        Sinflashtirish — bu mashinali o‘qitishda ma’lumotlarni oldindan berilgan toifalarga ajratish jarayonidir.
+        Masalan, emailni spam yoki oddiy xabar sifatida aniqlash.
+    </p>
+    <p>
+        Bu usul sun’iy intellektning muhim yo‘nalishlaridan biri bo‘lib, tibbiyot, moliya va xavfsizlik sohalarida keng qo‘llaniladi.
+    </p>
+</section>
+
+<section id="naive">
+    <h2>🧠 Naive Bayes algoritmi</h2>
+    <p>
+        Naive Bayes — ehtimollik nazariyasiga asoslangan algoritm bo‘lib,
+        Bayes teoremasiga asoslanadi.
+    </p>
+    <ul>
+        <li>✔ Juda tez ishlaydi</li>
+        <li>✔ Katta datasetlarda samarali</li>
+        <li>❌ Ba’zan aniqligi past</li>
+    </ul>
+</section>
+
+<section id="knn">
+    <h2>📍 K-Nearest Neighbors (KNN)</h2>
+    <p>
+        KNN algoritmi yangi ma’lumotni unga eng yaqin qo‘shnilar asosida aniqlaydi.
+    </p>
+    <ul>
+        <li>✔ Oddiy va tushunarli</li>
+        <li>✔ Aniqligi yuqori</li>
+        <li>❌ Sekin ishlashi mumkin</li>
+    </ul>
+</section>
+
+<section id="compare">
+    <h2>⚖ Taqqoslash</h2>
+    <table>
+        <tr>
+            <th>Algoritm</th>
+            <th>Tezlik</th>
+            <th>Aniqlik</th>
+        </tr>
+        <tr>
+            <td>Naive Bayes</td>
+            <td>Yuqori</td>
+            <td>O‘rtacha</td>
+        </tr>
+        <tr>
+            <td>KNN</td>
+            <td>Past</td>
+            <td>Yuqori</td>
+        </tr>
+    </table>
+</section>
+
+<section id="usage">
+    <h2>📍 Qo‘llanilish sohalari</h2>
+    <ul>
+        <li>Email spam aniqlash</li>
+        <li>Tibbiyotda kasallikni aniqlash</li>
+        <li>Bankda firibgarlikni aniqlash</li>
+        <li>Rekomendatsiya tizimlari</li>
+    </ul>
+</section>
+
+<section id="learn">
+    <h2>📚 Qanday o‘rganish mumkin?</h2>
+    <p>
+        Bu algoritmlarni o‘rganish uchun Python tilini bilish kerak.
+        Shuningdek, sklearn kutubxonasi orqali amaliy ishlash mumkin.
+    </p>
+    <ul>
+        <li>Python asoslari</li>
+        <li>NumPy va Pandas</li>
+        <li>Scikit-learn (sklearn)</li>
+    </ul>
+</section>
+
+<section id="quiz">
+    <h2>📝 Test (10 savol)</h2>
+    <div id="quiz-container"></div>
+    <button onclick="showResult()">Natijani ko‘rish</button>
+    <p id="result"></p>
+</section>
+
+<section id="game">
+    <h2>🎮 O‘yin: Algoritmni top!</h2>
+    <p id="gameQuestion"></p>
+    <button onclick="checkGame('NB')">Naive Bayes</button>
+    <button onclick="checkGame('KNN')">KNN</button>
+    <p id="gameResult"></p>
+</section>
+
+<section id="stats">
+    <h2>📊 Statistika</h2>
+    <p>Naive Bayes tezroq, KNN esa aniqroq ishlaydi.</p>
+
+    <div style="background:gray; width:100%; height:20px;">
+        <div style="width:80%; background:green; height:20px;">Naive Bayes tezlik</div>
+    </div>
+
+    <div style="background:gray; width:100%; height:20px; margin-top:10px;">
+        <div style="width:90%; background:blue; height:20px;">KNN aniqlik</div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Demir | Machine Learning loyihasi</p>
+</footer>
+
+<script src="../static/css/script.js"></script>
+
+</body>
+</html>
